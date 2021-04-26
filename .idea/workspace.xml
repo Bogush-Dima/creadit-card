@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdc3a49e-b91e-48bd-b4c8-04396bea7af3" name="Default Changelist" comment="restart project">
-      <change afterPath="$PROJECT_DIR$/src/components/CardView/component.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CardView/styles.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles.ts" afterDir="false" />
+    <list default="true" id="cdc3a49e-b91e-48bd-b4c8-04396bea7af3" name="Default Changelist" comment="create card structure">
+      <change afterPath="$PROJECT_DIR$/src/components/FormToFill/component.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CardView/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CardView/styles.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +28,7 @@
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Other File Types" />
     <property name="ts.external.directory.path" value="C:\My folder\------ WORK FALDER ------\credit-card\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -42,7 +40,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1619423200354</updated>
-      <workItem from="1619423201666" duration="8471000" />
+      <workItem from="1619423201666" duration="10036000" />
     </task>
     <task id="LOCAL-00001" summary="start project">
       <created>1619423781907</created>
@@ -58,7 +56,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619425649782</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="create card structure">
+      <created>1619438401489</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1619438401489</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -78,6 +83,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="start project" />
     <MESSAGE value="restart project" />
-    <option name="LAST_COMMIT_MESSAGE" value="restart project" />
+    <MESSAGE value="create card structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="create card structure" />
   </component>
 </project>

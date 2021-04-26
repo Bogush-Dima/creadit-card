@@ -11,13 +11,13 @@ export const useStyles = makeStyles({
     },
     logo: {
         height: '40px',
-        width: '90px',
-        // marginLeft: 'auto',
+        width: '90px'
     },
     content: {
         height: '80%'
     },
     backSide: {
+        display: 'none',
         position: 'absolute',
         top: 0,
         right: 0,
