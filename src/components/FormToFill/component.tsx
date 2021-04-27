@@ -15,7 +15,7 @@ export const FormToFill: React.FC = () => {
                     <TextField label='Code'/>
                 </Grid>
             </form>
-            <Grid container justify='center' alignItems='center'>
+            <Grid container justify='space-around' alignItems='center'>
                 <Button variant="contained" color="primary">Submit</Button>
                 <Button variant="contained">Reset</Button>
             </Grid>
