@@ -7,14 +7,15 @@ export const useStyles = makeStyles({
         borderRadius: '10px',
         width: '340px',
         height: '210px',
-        overflow: 'hidden'
+        overflow: 'hidden',
+        marginBottom: '30px',
     },
     logo: {
         height: '40px',
-        width: '90px'
+        width: '90px',
     },
     content: {
-        height: '80%'
+        height: '80%',
     },
     backSide: {
         display: 'none',
@@ -23,9 +24,9 @@ export const useStyles = makeStyles({
         right: 0,
         bottom: 0,
         left: 0,
-        background: "#ffa50087"
+        background: "#ffa50087",
     },
     cardCode: {
-        margin: '30px'
+        margin: '30px',
     }
 })

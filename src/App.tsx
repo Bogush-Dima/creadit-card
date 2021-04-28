@@ -11,8 +11,8 @@ export const App: React.FC = () => {
         <CssBaseline>
             <Grid container className={classes.wrapper} justify="center" alignItems="center">
                 <Grid container md={4} justify='center' alignItems='center'>
-                    <CardView />
-                    <FormToFill />
+                    <CardView/>
+                    <FormToFill/>
                 </Grid>
             </Grid>
         </CssBaseline>
