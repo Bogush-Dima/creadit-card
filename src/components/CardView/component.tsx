@@ -11,20 +11,16 @@ export const CardView: React.FC = () => {
                 undefined
             </Grid>
 
-            <Grid container className={classes.content} direction='column' alignItems="center" justify='center' >
-                <Grid item>
-                    <p>Card Number</p>
-                </Grid>
+            <Grid container className={classes.content} direction='column' alignItems="center" justify='center'>
+                <p className={classes.cardNumber}>Card Number</p>
 
-                <Grid container justify='space-around'>
-                        <p>User Name</p>
-                        <p>Date</p>
+                <Grid container justify='space-between'>
+                    <p className={classes.userName}>User Name</p>
+                    <p className={classes.viewData}>Date</p>
                 </Grid>
 
                 <Grid container className={classes.backSide} justify='flex-end' alignItems='flex-end'>
-                    <Grid item>
-                        <p>Code</p>
-                    </Grid>
+                    <p className={classes.viewData}>Code</p>
                 </Grid>
             </Grid>
         </Grid>
