@@ -22,5 +22,8 @@ export const useStyles = makeStyles({
         padding: '5px',
         border: '2px solid #8e8e8e',
         borderRadius: '5px',
+    },
+    button: {
+        margin: '0 10px',
     }
 })

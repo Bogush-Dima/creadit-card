@@ -1,6 +1,9 @@
 export interface Props {
+    initialFormikValues: any
     formikValues: any
     setFormikValues: any
+    blurValues: any
+    setBlurValues: any
 }
 
 export interface Values {

@@ -3,7 +3,7 @@ import {makeStyles} from "@material-ui/core";
 export const useStyles = makeStyles({
     card: {
         position: 'relative',
-        background: 'gray',
+        backgroundImage: 'url(https://media.istockphoto.com/photos/blue-abstract-background-or-texture-picture-id1138395421?k=6&m=1138395421&s=612x612&w=0&h=bJ1SRWujCgg3QWzkGPgaRiArNYohPl7-Wc4p_Fa_cyA=)',
         padding: '15px',
         borderRadius: '10px',
         width: '340px',
@@ -12,7 +12,7 @@ export const useStyles = makeStyles({
         marginBottom: '30px',
     },
     logo: {
-        width: '90px',
+        lineHeight: 0,
     },
     content: {
         height: '80%',
@@ -24,6 +24,7 @@ export const useStyles = makeStyles({
         padding: '5px',
         width: '100%',
         textAlign: 'center',
+        background: '#ffffffb5',
     },
     userName: {
         border: '2px solid #cecece',
@@ -31,11 +32,15 @@ export const useStyles = makeStyles({
         padding: '5px 15px',
         minWidth: '190px',
         textAlign: 'center',
+        background: '#ffffffb5',
     },
-    viewData: {
+    viewDate: {
         border: '2px solid #cecece',
         borderRadius: '5px',
         padding: '5px 15px',
+        minWidth: '90px',
+        textAlign: 'center',
+        background: '#ffffffb5',
     },
     backSide: {
         display: 'none',
@@ -44,9 +49,16 @@ export const useStyles = makeStyles({
         right: 0,
         bottom: 0,
         left: 0,
-        background: "#ffa50087",
+        padding: '15px',
+        backgroundImage: 'url(https://media.istockphoto.com/photos/blue-abstract-background-or-texture-picture-id1138395421?k=6&m=1138395421&s=612x612&w=0&h=bJ1SRWujCgg3QWzkGPgaRiArNYohPl7-Wc4p_Fa_cyA=)',
     },
     cardCode: {
         margin: '30px',
+    },
+    onFocus: {
+        borderColor: '#fffe00',
+    },
+    onFocusBackSide: {
+        display: 'flex',
     }
 })
