@@ -14,7 +14,7 @@ export const FormToFill: React.FC<Props> = ({
     return (
         <>
             <Formik initialValues={initialFormikValues} onSubmit={(values) => console.log(values)}>
-                {({values, handleChange, handleReset}) => {
+                {({values, handleChange, handleReset, setFieldValue, resetForm}) => {
                     if (values.name) {
                         values.name = values.name.toUpperCase()
                     }
@@ -30,8 +30,13 @@ export const FormToFill: React.FC<Props> = ({
                     }
 
                     const reset = () => {
-                        setFormikValues(initialFormikValues)
-                        handleReset()
+                        // setFormikValues(initialFormikValues)
+                        // handleReset()
+                        // resetForm()
+                        setFieldValue('cardNumber', '')
+                        setFieldValue('name', '')
+                        setFieldValue('date', '')
+                        setFieldValue('cvv', '')
                     }
 
                     setFormikValues(values)
@@ -39,7 +44,6 @@ export const FormToFill: React.FC<Props> = ({
                     return (
                         <Form className={classes.form}>
                             <Field className={classes.longField} type="tel" maxLength='16' name="cardNumber"
-                                   value={values.cardNumber}
                                    placeholder='Card Number' onChange={handleChange} onFocus={clickInput}
                                    onBlur={blurInput}/>
                             <Field className={classes.longField} type="text" value={values.name} name="name"
@@ -54,7 +58,8 @@ export const FormToFill: React.FC<Props> = ({
                             <Grid container justify='center' alignItems='center'>
                                 <Button className={classes.button} type='submit' variant="contained"
                                         color="primary">Submit</Button>
-                                <Button className={classes.button} onClick={reset} variant="contained">Reset</Button>
+                                <Button className={classes.button} type='reset' onClick={reset}
+                                        variant="contained">Reset</Button>
                             </Grid>
                         </Form>
                     )
