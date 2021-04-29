@@ -12,7 +12,11 @@ export const useStyles = makeStyles({
         marginBottom: '30px',
     },
     logo: {
+        height: 0,
         lineHeight: 0,
+    },
+    cardSystem: {
+        color: 'white',
     },
     content: {
         height: '80%',

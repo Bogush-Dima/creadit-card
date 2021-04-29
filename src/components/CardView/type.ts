@@ -1,4 +1,4 @@
 export interface Props {
-    formikValues: any
-    blurValues: any
+    formik: any
+    fieldInFocus: string
 }

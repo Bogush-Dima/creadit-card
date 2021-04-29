@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdc3a49e-b91e-48bd-b4c8-04396bea7af3" name="Default Changelist" comment="change styles for CardView">
+    <list default="true" id="cdc3a49e-b91e-48bd-b4c8-04396bea7af3" name="Default Changelist" comment="add reset form (bad realization)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CardView/component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CardView/component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CardView/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CardView/styles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CardView/type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CardView/type.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/FormToFill/component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FormToFill/component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FormToFill/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FormToFill/styles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FormToFill/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FormToFill/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,6 +21,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1rhL6faKNdr4aXofw18EsUyJT00" />
   <component name="ProjectViewState">
@@ -28,7 +45,8 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="C:\MY_FOLDER\---WORK-FOLDER---\creadit-card\node_modules\prettier" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
     <property name="ts.external.directory.path" value="C:\MY_FOLDER\---WORK-FOLDER---\creadit-card\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -55,6 +73,9 @@
       <workItem from="1619447049861" duration="615000" />
       <workItem from="1619526788359" duration="3613000" />
       <workItem from="1619590827442" duration="25467000" />
+      <workItem from="1619621261242" duration="238000" />
+      <workItem from="1619676366711" duration="6030000" />
+      <workItem from="1619682976545" duration="8711000" />
     </task>
     <task id="LOCAL-00001" summary="start project">
       <created>1619423781907</created>
@@ -119,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619616812030</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add reset form (bad realization)">
+      <created>1619621332921</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1619621332921</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,7 +158,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -147,6 +187,11 @@
     <MESSAGE value="restyling CardView" />
     <MESSAGE value="made view data in CardView in real time" />
     <MESSAGE value="change styles for CardView" />
-    <option name="LAST_COMMIT_MESSAGE" value="change styles for CardView" />
+    <MESSAGE value="add reset form (bad realization)" />
+    <option name="LAST_COMMIT_MESSAGE" value="add reset form (bad realization)" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

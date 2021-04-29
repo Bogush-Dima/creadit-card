@@ -1,29 +1,24 @@
-import {makeStyles} from "@material-ui/core";
+import { makeStyles } from "@material-ui/core";
 
 export const useStyles = makeStyles({
-    form: {
-        marginBottom: '30px',
-        width: '500px',
-    },
-    fieldContainer: {
-        marginBottom: '30px',
-    },
-    longField: {
-        width: '100%',
-        marginBottom: '10px',
-        fontSize: '20px',
-        padding: '5px',
-        border: '2px solid #8e8e8e',
-        borderRadius: '5px',
-    },
-    shortField: {
-        width: '40%',
-        fontSize: '20px',
-        padding: '5px',
-        border: '2px solid #8e8e8e',
-        borderRadius: '5px',
-    },
-    button: {
-        margin: '0 10px',
-    }
-})
+  form: {
+    marginBottom: "30px",
+    width: "500px",
+  },
+  fieldContainer: {
+    marginBottom: "30px",
+  },
+  longField: {
+    width: '100%',
+    marginBottom: '15px',
+  },
+  shortField: {
+    width: '48%',
+  },
+  buttonWrapper: {
+      marginTop: '25px',
+  },
+  button: {
+    margin: "0 10px",
+  },
+});
