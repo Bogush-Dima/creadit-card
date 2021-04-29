@@ -4,8 +4,31 @@ import { useStyles } from "./styles";
 import { CardView } from "./components/CardView/component";
 import { FormToFill } from "./components/FormToFill/component";
 import { useFormik } from "formik";
+import * as yup from 'yup';
 
 export const App: React.FC = () => {
+  const SignupSchema = yup.object({
+    cardNumber: yup
+        .string()
+        .min(16, 'Card number must have 16 characters')
+        .max(16, 'Card number must have 16 characters')
+        .required('Card number is required'),
+    name: yup
+        .string()
+        .min(1, 'Empty name')
+        .required('Name is required'),
+    date: yup
+        .string()
+        .min(5, 'Date must have 5 characters')
+        .max(5, 'Date must have 5 characters')
+        .required('Date is required'),
+    cvv: yup
+        .string()
+        .min(3, 'CVV must have 3 characters')
+        .max(3, 'CVV must have 3 characters')
+        .required('CVV is required'),
+  });
+
   const formik = useFormik({
     initialValues: {
       cardNumber: '',
@@ -13,6 +36,7 @@ export const App: React.FC = () => {
       date: '',
       cvv: '',
     },
+    validationSchema: SignupSchema,
     onSubmit: (values: any) => {
       alert(JSON.stringify(values, null, 2));
     },

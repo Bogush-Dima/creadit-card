@@ -8,7 +8,7 @@ export const FormToFill: React.FC<Props> = ({
   setFieldInFocus,
 }: Props) => {
   const classes = useStyles();
-  const { handleChange } = formik;
+  const { handleChange, errors } = formik;
   const { cardNumber, name, date, cvv } = formik.values;
 
   const onFocus = (event: any) => {
@@ -19,6 +19,12 @@ export const FormToFill: React.FC<Props> = ({
     setFieldInFocus("");
   };
 
+  const fieldsLimiter = (event: any, num: number) => {
+    event.target.value = Math.max(0, parseInt(event.target.value))
+      .toString()
+      .slice(0, num);
+  };
+
   return (
     <form onSubmit={formik.handleSubmit}>
       <TextField
@@ -27,9 +33,13 @@ export const FormToFill: React.FC<Props> = ({
         name="cardNumber"
         label="Card Number"
         variant="outlined"
+        size="small"
+        onInput={(event: any) => fieldsLimiter(event, 16)}
         onChange={handleChange}
         onFocus={onFocus}
         onBlur={onBlur}
+        error={Boolean(errors.cardNumber)}
+        helperText={errors.cardNumber}
         value={cardNumber}
       />
       <TextField
@@ -38,9 +48,12 @@ export const FormToFill: React.FC<Props> = ({
         name="name"
         label="Name"
         variant="outlined"
+        size="small"
         onChange={handleChange}
         onFocus={onFocus}
         onBlur={onBlur}
+        error={Boolean(errors.name)}
+        helperText={errors.name}
         value={name}
       />
       <Grid container justify="space-between">
@@ -50,9 +63,13 @@ export const FormToFill: React.FC<Props> = ({
           name="date"
           label="Date"
           variant="outlined"
+          size="small"
+          onInput={(event: any) => fieldsLimiter(event, 5)}
           onChange={handleChange}
           onFocus={onFocus}
           onBlur={onBlur}
+          error={Boolean(errors.date)}
+          helperText={errors.date}
           value={date}
         />
         <TextField
@@ -61,9 +78,13 @@ export const FormToFill: React.FC<Props> = ({
           name="cvv"
           label="CVV"
           variant="outlined"
+          size="small"
+          onInput={(event: any) => fieldsLimiter(event, 3)}
           onChange={handleChange}
           onFocus={onFocus}
           onBlur={onBlur}
+          error={Boolean(errors.cvv)}
+          helperText={errors.cvv}
           value={cvv}
         />
       </Grid>
