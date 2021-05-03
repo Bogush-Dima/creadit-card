@@ -18,9 +18,6 @@ export const useStyles = makeStyles({
     cardSystem: {
         color: 'white',
     },
-    content: {
-        height: '80%',
-    },
     cardNumber: {
         fontSize: '20px',
         border: '2px solid #cecece',
@@ -31,10 +28,11 @@ export const useStyles = makeStyles({
         background: '#ffffffb5',
     },
     userName: {
+        overflowX: 'auto',
         border: '2px solid #cecece',
         borderRadius: '5px',
         padding: '5px 15px',
-        minWidth: '190px',
+        width: '190px',
         textAlign: 'center',
         background: '#ffffffb5',
     },
@@ -42,7 +40,7 @@ export const useStyles = makeStyles({
         border: '2px solid #cecece',
         borderRadius: '5px',
         padding: '5px 15px',
-        minWidth: '90px',
+        width: '90px',
         textAlign: 'center',
         background: '#ffffffb5',
     },

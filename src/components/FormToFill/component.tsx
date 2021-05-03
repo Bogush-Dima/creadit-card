@@ -1,4 +1,4 @@
-import React, { FocusEvent } from "react";
+import React, {ChangeEvent, FocusEvent} from "react";
 import InputMask from "react-input-mask";
 import { Grid, TextField, Button } from "@material-ui/core";
 import { useStyles } from "./styles";
@@ -11,6 +11,11 @@ export const FormToFill: React.FC<Props> = ({
   const classes = useStyles();
   const { handleChange, errors } = formik;
   const { cardNumber, name, date, cvv } = formik.values;
+
+  const formattingName = (event: ChangeEvent<HTMLInputElement>) => {
+      event.target.value = event.target.value.toUpperCase()
+      handleChange(event)
+  }
 
   const onFocus = (event: FocusEvent<HTMLInputElement>) => {
     setFieldInFocus(event.target.name);
@@ -50,7 +55,7 @@ export const FormToFill: React.FC<Props> = ({
         label="name"
         variant="outlined"
         size="small"
-        onChange={handleChange}
+        onChange={formattingName}
         onFocus={onFocus}
         onBlur={onBlur}
         error={Boolean(errors.name)}

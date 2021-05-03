@@ -34,32 +34,26 @@ export const CardView: React.FC<Props> = ({ formik, fieldInFocus }: Props) => {
         <p className={classes.cardSystem}>{authCardSystem()}</p>
       </Grid>
 
-      <Grid
-        container
-        className={classes.content}
-        direction="column"
-        alignItems="center"
-        justify="center"
-      >
+      <Grid container direction="column" alignItems="center" justify="center">
         <p
           className={clsx(classes.cardNumber, {
-            [classes.onFocus]: fieldInFocus === 'cardNumber',
+            [classes.onFocus]: fieldInFocus === "cardNumber",
           })}
         >
           {cardNumber ? cardNumber : "Card Number"}
         </p>
 
-        <Grid container justify="space-between">
+        <Grid container justify="space-between" alignItems="baseline">
           <p
             className={clsx(classes.userName, {
-              [classes.onFocus]: fieldInFocus === 'name',
+              [classes.onFocus]: fieldInFocus === "name",
             })}
           >
             {name ? name : "Name"}
           </p>
           <p
             className={clsx(classes.viewDate, {
-              [classes.onFocus]: fieldInFocus === 'date',
+              [classes.onFocus]: fieldInFocus === "date",
             })}
           >
             {date ? date : "Date"}
@@ -69,14 +63,14 @@ export const CardView: React.FC<Props> = ({ formik, fieldInFocus }: Props) => {
         <Grid
           container
           className={clsx(classes.backSide, {
-            [classes.onFocusBackSide]: fieldInFocus === 'cvv',
+            [classes.onFocusBackSide]: fieldInFocus === "cvv",
           })}
           justify="flex-end"
           alignItems="flex-end"
         >
           <p
             className={clsx(classes.viewDate, {
-              [classes.onFocus]: fieldInFocus === 'cvv',
+              [classes.onFocus]: fieldInFocus === "cvv",
             })}
           >
             {cvv ? cvv : "CVV"}

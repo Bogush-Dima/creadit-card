@@ -4,36 +4,37 @@ import { useStyles } from "./styles";
 import { CardView } from "./components/CardView/component";
 import { FormToFill } from "./components/FormToFill/component";
 import { useFormik } from "formik";
-import * as yup from 'yup';
+import * as yup from "yup";
 
 export const App: React.FC = () => {
   const SignupSchema = yup.object({
     cardNumber: yup
-        .string()
-        .matches(/^(4|5|6)/, "Name should start with 4, 5, or 6")
-        .length(19, 'Card number must have 16 characters')
-        .required('Card number is required'),
+      .string()
+      .matches(/^[456]/, "Number should start with 4, 5, or 6")
+      .matches(/^\d{4}\s\d{4}\s\d{4}\s\d{4}$/, "Number isn't completed")
+      .length(19, "Number must have 16 characters")
+      .required("Number is required"),
     name: yup
-        .string()
-        .matches(/\D/, "Name shouldn't have numbers")
-        .required('Name is required'),
+      .string()
+      .matches(/\D/, "Name shouldn't have numbers")
+      .matches(/\D\s\D/, "Name should have indent")
+      .required("Name is required"),
     date: yup
-        .string()
-        .matches(/\//, "Must have /")
-        .length(5, 'Date must have 5 characters')
-        .required('Date is required'),
+      .string()
+      .matches(/\d{2}\/\d{2}/, "Date isn't completed")
+      .required("Date is required"),
     cvv: yup
-        .string()
-        .length(3, 'CVV must have 3 characters')
-        .required('CVV is required'),
+      .string()
+      .length(3, "CVV must have 3 characters")
+      .required("CVV is required"),
   });
 
   const formik = useFormik({
     initialValues: {
-      cardNumber: '',
-      name: '',
-      date: '',
-      cvv: '',
+      cardNumber: "",
+      name: "",
+      date: "",
+      cvv: "",
     },
     validationSchema: SignupSchema,
     onSubmit: (values: any) => {
@@ -41,7 +42,7 @@ export const App: React.FC = () => {
     },
   });
 
-  const [fieldInFocus, setFieldInFocus] = useState('');
+  const [fieldInFocus, setFieldInFocus] = useState("");
   const classes = useStyles();
 
   return (
