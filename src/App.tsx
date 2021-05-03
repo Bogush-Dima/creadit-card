@@ -10,22 +10,21 @@ export const App: React.FC = () => {
   const SignupSchema = yup.object({
     cardNumber: yup
         .string()
-        .min(16, 'Card number must have 16 characters')
-        .max(16, 'Card number must have 16 characters')
+        .matches(/^(4|5|6)/, "Name should start with 4, 5, or 6")
+        .length(19, 'Card number must have 16 characters')
         .required('Card number is required'),
     name: yup
         .string()
-        .min(1, 'Empty name')
+        .matches(/\D/, "Name shouldn't have numbers")
         .required('Name is required'),
     date: yup
         .string()
-        .min(5, 'Date must have 5 characters')
-        .max(5, 'Date must have 5 characters')
+        .matches(/\//, "Must have /")
+        .length(5, 'Date must have 5 characters')
         .required('Date is required'),
     cvv: yup
         .string()
-        .min(3, 'CVV must have 3 characters')
-        .max(3, 'CVV must have 3 characters')
+        .length(3, 'CVV must have 3 characters')
         .required('CVV is required'),
   });
 

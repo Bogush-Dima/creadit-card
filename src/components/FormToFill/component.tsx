@@ -1,4 +1,5 @@
-import React from "react";
+import React, { FocusEvent } from "react";
+import InputMask from "react-input-mask";
 import { Grid, TextField, Button } from "@material-ui/core";
 import { useStyles } from "./styles";
 import { Props } from "./types";
@@ -11,7 +12,7 @@ export const FormToFill: React.FC<Props> = ({
   const { handleChange, errors } = formik;
   const { cardNumber, name, date, cvv } = formik.values;
 
-  const onFocus = (event: any) => {
+  const onFocus = (event: FocusEvent<HTMLInputElement>) => {
     setFieldInFocus(event.target.name);
   };
 
@@ -19,34 +20,34 @@ export const FormToFill: React.FC<Props> = ({
     setFieldInFocus("");
   };
 
-  const fieldsLimiter = (event: any, num: number) => {
-    event.target.value = Math.max(0, parseInt(event.target.value))
-      .toString()
-      .slice(0, num);
-  };
-
   return (
     <form onSubmit={formik.handleSubmit}>
-      <TextField
-        className={classes.longField}
-        type="number"
-        name="cardNumber"
-        label="Card Number"
-        variant="outlined"
-        size="small"
-        onInput={(event: any) => fieldsLimiter(event, 16)}
+      <InputMask
+        mask="9999 9999 9999 9999"
         onChange={handleChange}
         onFocus={onFocus}
         onBlur={onBlur}
-        error={Boolean(errors.cardNumber)}
-        helperText={errors.cardNumber}
         value={cardNumber}
-      />
+      >
+        {() => (
+          <TextField
+            className={classes.longField}
+            type="text"
+            name="cardNumber"
+            label="card number"
+            variant="outlined"
+            size="small"
+            inputProps={{ maxLength: 20 }}
+            error={Boolean(errors.cardNumber)}
+            helperText={errors.cardNumber}
+          />
+        )}
+      </InputMask>
       <TextField
         className={classes.longField}
         type="text"
         name="name"
-        label="Name"
+        label="name"
         variant="outlined"
         size="small"
         onChange={handleChange}
@@ -57,29 +58,36 @@ export const FormToFill: React.FC<Props> = ({
         value={name}
       />
       <Grid container justify="space-between">
-        <TextField
-          className={classes.shortField}
-          type="number"
-          name="date"
-          label="Date"
-          variant="outlined"
-          size="small"
-          onInput={(event: any) => fieldsLimiter(event, 5)}
+        <InputMask
+          mask="99/99"
+          maskPlaceholder="mm/yy"
           onChange={handleChange}
           onFocus={onFocus}
           onBlur={onBlur}
-          error={Boolean(errors.date)}
-          helperText={errors.date}
           value={date}
-        />
+        >
+          {() => (
+            <TextField
+              className={classes.shortField}
+              type="text"
+              name="date"
+              label="mm/yy"
+              variant="outlined"
+              size="small"
+              inputProps={{ maxLength: 6 }}
+              error={Boolean(errors.date)}
+              helperText={errors.date}
+            />
+          )}
+        </InputMask>
         <TextField
           className={classes.shortField}
-          type="number"
+          type="text"
           name="cvv"
-          label="CVV"
+          label="cvv"
           variant="outlined"
           size="small"
-          onInput={(event: any) => fieldsLimiter(event, 3)}
+          inputProps={{ maxLength: 3 }}
           onChange={handleChange}
           onFocus={onFocus}
           onBlur={onBlur}
