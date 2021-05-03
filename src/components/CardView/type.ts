@@ -1,4 +1,7 @@
+import { FormikProps } from "formik";
+import { FormikValues } from "../../types";
+
 export interface Props {
-    formik: any
+    formik: FormikProps<FormikValues>
     fieldInFocus: string
 }

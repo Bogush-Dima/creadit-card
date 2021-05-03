@@ -9,8 +9,7 @@ export const CardView: React.FC<Props> = ({ formik, fieldInFocus }: Props) => {
   const { cardNumber, name, date, cvv } = formik.values;
 
   const authCardSystem = () => {
-    const cardNumberStr = String(cardNumber);
-    switch (cardNumberStr[0]) {
+    switch (cardNumber[0]) {
       case "4":
         return "Visa";
       case "5":

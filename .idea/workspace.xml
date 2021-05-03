@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdc3a49e-b91e-48bd-b4c8-04396bea7af3" name="Default Changelist" comment="add react-input-mask to project">
+    <list default="true" id="cdc3a49e-b91e-48bd-b4c8-04396bea7af3" name="Default Changelist" comment="change validation app">
+      <change afterPath="$PROJECT_DIR$/src/components/CardForm/component.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CardForm/components/Input/component.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CardForm/components/Input/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CardForm/components/InputWithMask/component.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CardForm/components/InputWithMask/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CardForm/types.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CardView/component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CardView/component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CardView/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CardView/styles.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FormToFill/component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FormToFill/component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CardView/type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CardView/type.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FormToFill/component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FormToFill/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CardForm/styles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FormToFill/types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +42,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../sd.portal.web" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -49,6 +58,7 @@
       <recent name="C:\MY_FOLDER\---WORK-FOLDER---\creadit-card\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\MY_FOLDER\---WORK-FOLDER---\creadit-card\src\components\CardForm\components\Input" />
       <recent name="C:\MY_FOLDER\---WORK-FOLDER---\creadit-card\src\components\FormToFill" />
     </key>
   </component>
@@ -72,7 +82,7 @@
       <workItem from="1619682976545" duration="18993000" />
       <workItem from="1620022019277" duration="26000" />
       <workItem from="1620022082937" duration="5254000" />
-      <workItem from="1620028941208" duration="9797000" />
+      <workItem from="1620028941208" duration="17967000" />
     </task>
     <task id="LOCAL-00001" summary="start project">
       <created>1619423781907</created>
@@ -165,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620031890938</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="change validation app">
+      <created>1620041265402</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1620041265402</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,7 +226,8 @@
     <MESSAGE value="redesign FormToFill &amp; fix bug with reset form" />
     <MESSAGE value="create fieldsLimiter &amp; validation fields" />
     <MESSAGE value="add react-input-mask to project" />
-    <option name="LAST_COMMIT_MESSAGE" value="add react-input-mask to project" />
+    <MESSAGE value="change validation app" />
+    <option name="LAST_COMMIT_MESSAGE" value="change validation app" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
