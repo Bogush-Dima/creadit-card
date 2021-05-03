@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdc3a49e-b91e-48bd-b4c8-04396bea7af3" name="Default Changelist" comment="divided CardForm on subcomponents">
-      <change afterPath="$PROJECT_DIR$/jsconfig.json" afterDir="false" />
+    <list default="true" id="cdc3a49e-b91e-48bd-b4c8-04396bea7af3" name="Default Changelist" comment="added jsconfig.json">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CardForm/components/Input/component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CardForm/components/Input/component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CardForm/components/Input/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CardForm/components/Input/types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CardForm/components/InputWithMask/component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CardForm/components/InputWithMask/component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CardForm/components/InputWithMask/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CardForm/components/InputWithMask/types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CardForm/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CardForm/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CardForm/components/Input/types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CardForm/components/InputWithMask/types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +14,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="d8959927d4e8b091e00bc007a3fa4752e84887d7" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -76,6 +79,8 @@
       <workItem from="1620022019277" duration="26000" />
       <workItem from="1620022082937" duration="5254000" />
       <workItem from="1620028941208" duration="20027000" />
+      <workItem from="1620054786008" duration="116000" />
+      <workItem from="1620054922091" duration="350000" />
     </task>
     <task id="LOCAL-00001" summary="start project">
       <created>1619423781907</created>
@@ -199,7 +204,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/master" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>

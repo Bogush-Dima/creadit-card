@@ -1,0 +1,98 @@
+Index: src/components/CardForm/components/Input/types.ts
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/CardForm/components/Input/types.ts b/src/components/CardForm/components/Input/types.ts
+deleted file mode 100644
+--- a/src/components/CardForm/components/Input/types.ts	
++++ /dev/null	
+@@ -1,14 +0,0 @@
+-import {ChangeEvent, FocusEvent} from "react";
+-
+-export interface Props {
+-  errors: any;
+-  value: string;
+-  className: string;
+-  name: string;
+-  label: string;
+-  maxLength?: number;
+-  onFocus: (event: FocusEvent<HTMLInputElement>) => void;
+-  onBlur: () => void;
+-  handleChange?: any;
+-  formattingName?: (event: ChangeEvent<HTMLInputElement>) => void;
+-}
+Index: tsconfig.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/tsconfig.json b/tsconfig.json
+deleted file mode 100644
+--- a/tsconfig.json	
++++ /dev/null	
+@@ -1,26 +0,0 @@
+-{
+-  "compilerOptions": {
+-    "target": "es5",
+-    "lib": [
+-      "dom",
+-      "dom.iterable",
+-      "esnext"
+-    ],
+-    "allowJs": true,
+-    "skipLibCheck": true,
+-    "esModuleInterop": true,
+-    "allowSyntheticDefaultImports": true,
+-    "strict": true,
+-    "forceConsistentCasingInFileNames": true,
+-    "noFallthroughCasesInSwitch": true,
+-    "module": "esnext",
+-    "moduleResolution": "node",
+-    "resolveJsonModule": true,
+-    "isolatedModules": true,
+-    "noEmit": true,
+-    "jsx": "react-jsx"
+-  },
+-  "include": [
+-    "src"
+-  ]
+-}
+Index: src/components/CardForm/components/InputWithMask/types.ts
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/CardForm/components/InputWithMask/types.ts b/src/components/CardForm/components/InputWithMask/types.ts
+deleted file mode 100644
+--- a/src/components/CardForm/components/InputWithMask/types.ts	
++++ /dev/null	
+@@ -1,14 +0,0 @@
+-import {FocusEvent} from "react";
+-
+-export interface Props {
+-  errors: any;
+-  mask: string;
+-  value: string;
+-  className: string;
+-  name: string;
+-  label: string;
+-  maxLength?: number;
+-  onFocus: (event: FocusEvent<HTMLInputElement>) => void;
+-  onBlur: () => void;
+-  handleChange?: any;
+-}
+Index: jsconfig.json
+===================================================================
+diff --git a/jsconfig.json b/jsconfig.json
+deleted file mode 100644
+--- a/jsconfig.json	
++++ /dev/null	
+@@ -1,6 +0,0 @@
+-{
+-  "compilerOptions": {
+-    "baseUrl": "src"
+-  },
+-  "include": ["src"]
+-}
+\ No newline at end of file

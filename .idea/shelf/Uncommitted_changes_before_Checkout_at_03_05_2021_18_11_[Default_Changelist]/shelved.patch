@@ -1,0 +1,81 @@
+Index: src/components/CardForm/components/Input/types.ts
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/CardForm/components/Input/types.ts b/src/components/CardForm/components/Input/types.ts
+deleted file mode 100644
+--- a/src/components/CardForm/components/Input/types.ts	(revision d8959927d4e8b091e00bc007a3fa4752e84887d7)
++++ /dev/null	(revision d8959927d4e8b091e00bc007a3fa4752e84887d7)
+@@ -1,12 +0,0 @@
+-export interface Props {
+-  errors: any;
+-  value: string;
+-  className: string;
+-  name: string;
+-  label: string;
+-  maxLength?: number;
+-  onFocus: any;
+-  onBlur: any;
+-  handleChange?: any;
+-  formattingName?: any;
+-}
+Index: tsconfig.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/tsconfig.json b/tsconfig.json
+deleted file mode 100644
+--- a/tsconfig.json	(revision d8959927d4e8b091e00bc007a3fa4752e84887d7)
++++ /dev/null	(revision d8959927d4e8b091e00bc007a3fa4752e84887d7)
+@@ -1,26 +0,0 @@
+-{
+-  "compilerOptions": {
+-    "target": "es5",
+-    "lib": [
+-      "dom",
+-      "dom.iterable",
+-      "esnext"
+-    ],
+-    "allowJs": true,
+-    "skipLibCheck": true,
+-    "esModuleInterop": true,
+-    "allowSyntheticDefaultImports": true,
+-    "strict": true,
+-    "forceConsistentCasingInFileNames": true,
+-    "noFallthroughCasesInSwitch": true,
+-    "module": "esnext",
+-    "moduleResolution": "node",
+-    "resolveJsonModule": true,
+-    "isolatedModules": true,
+-    "noEmit": true,
+-    "jsx": "react-jsx"
+-  },
+-  "include": [
+-    "src"
+-  ]
+-}
+Index: src/components/CardForm/components/InputWithMask/types.ts
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/CardForm/components/InputWithMask/types.ts b/src/components/CardForm/components/InputWithMask/types.ts
+deleted file mode 100644
+--- a/src/components/CardForm/components/InputWithMask/types.ts	(revision d8959927d4e8b091e00bc007a3fa4752e84887d7)
++++ /dev/null	(revision d8959927d4e8b091e00bc007a3fa4752e84887d7)
+@@ -1,12 +0,0 @@
+-export interface Props {
+-    errors: any;
+-    mask: string;
+-    value: string;
+-    className: string;
+-    name: string;
+-    label: string;
+-    maxLength?: number;
+-    onFocus: any;
+-    onBlur: any;
+-    handleChange?: any;
+-}
+\ No newline at end of file
