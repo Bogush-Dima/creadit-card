@@ -1,3 +1,5 @@
+import {ChangeEvent, FocusEvent} from "react";
+
 export interface Props {
   errors: any;
   value: string;
@@ -5,8 +7,8 @@ export interface Props {
   name: string;
   label: string;
   maxLength?: number;
-  onFocus: any;
-  onBlur: any;
+  onFocus: (event: FocusEvent<HTMLInputElement>) => void;
+  onBlur: () => void;
   handleChange?: any;
-  formattingName?: any;
+  formattingName?: (event: ChangeEvent<HTMLInputElement>) => void;
 }

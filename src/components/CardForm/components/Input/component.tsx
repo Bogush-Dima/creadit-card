@@ -1,6 +1,6 @@
 import React from "react";
 import { TextField } from "@material-ui/core";
-import { Props } from "./types";
+import { InputsProps } from "../../types";
 
 export const Input = ({
   errors,
@@ -13,7 +13,7 @@ export const Input = ({
   onBlur,
   handleChange,
   formattingName,
-}: Props) => {
+}: InputsProps) => {
   return (
     <TextField
       className={className}

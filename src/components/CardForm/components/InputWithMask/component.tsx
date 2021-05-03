@@ -1,5 +1,5 @@
 import React from "react";
-import { Props } from "./types";
+import {InputsProps} from "../../types";
 import InputMask from "react-input-mask";
 import { TextField } from "@material-ui/core";
 
@@ -14,7 +14,7 @@ export const InputWithMask = ({
   onFocus,
   onBlur,
   handleChange,
-}: Props) => {
+}: InputsProps) => {
   return (
     <InputMask
       mask={mask}
