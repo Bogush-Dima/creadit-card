@@ -56,7 +56,7 @@ export const App: React.FC = () => {
         justify="center"
         alignItems="center"
       >
-        <Grid container md={4} justify="center" alignItems="center">
+        <Grid container className={classes.container} justify="center" alignItems="center">
           <CardView formik={formik} fieldInFocus={fieldInFocus} />
           <CardForm formik={formik} setFieldInFocus={setFieldInFocus} />
         </Grid>

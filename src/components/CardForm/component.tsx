@@ -2,7 +2,7 @@ import React, { ChangeEvent, FocusEvent } from "react";
 import { Grid, Button } from "@material-ui/core";
 import { useStyles } from "./styles";
 import { Props } from "./types";
-import { Input } from "./components/Input/component";
+import Input from "./components/Input";
 import { InputWithMask } from "./components/InputWithMask/component";
 
 export const CardForm: React.FC<Props> = ({
@@ -10,7 +10,7 @@ export const CardForm: React.FC<Props> = ({
   setFieldInFocus,
 }: Props) => {
   const classes = useStyles();
-  const { handleChange, resetForm, errors } = formik;
+  const { handleChange, handleBlur, resetForm, errors, touched } = formik;
   const { cardNumber, name, date, cvv } = formik.values;
 
   const formattingName = (event: ChangeEvent<HTMLInputElement>) => {
@@ -22,8 +22,9 @@ export const CardForm: React.FC<Props> = ({
     setFieldInFocus(event.target.name);
   };
 
-  const onBlur = () => {
+  const onBlur = (event: FocusEvent<HTMLInputElement>) => {
     setFieldInFocus("");
+    handleBlur(event)
   };
 
   return (
@@ -39,6 +40,7 @@ export const CardForm: React.FC<Props> = ({
         onFocus: onFocus,
         onBlur: onBlur,
         handleChange: handleChange,
+        touched: touched.cardNumber,
       })}
 
       {Input({
@@ -51,6 +53,7 @@ export const CardForm: React.FC<Props> = ({
         onBlur: onBlur,
         handleChange: handleChange,
         formattingName: formattingName,
+        touched: touched.name,
       })}
 
       <Grid container justify="space-between">
@@ -65,6 +68,7 @@ export const CardForm: React.FC<Props> = ({
           onFocus: onFocus,
           onBlur: onBlur,
           handleChange: handleChange,
+          touched: touched.date,
         })}
 
         {Input({
@@ -77,6 +81,7 @@ export const CardForm: React.FC<Props> = ({
           onFocus: onFocus,
           onBlur: onBlur,
           handleChange: handleChange,
+          touched: touched.cvv,
         })}
       </Grid>
 
@@ -91,6 +96,7 @@ export const CardForm: React.FC<Props> = ({
           type="submit"
           variant="contained"
           color="primary"
+
         >
           Submit
         </Button>

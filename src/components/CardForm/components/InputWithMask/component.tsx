@@ -1,5 +1,5 @@
 import React from "react";
-import {InputsProps} from "../../types";
+import { InputsProps } from "../../types";
 import InputMask from "react-input-mask";
 import { TextField } from "@material-ui/core";
 
@@ -14,6 +14,7 @@ export const InputWithMask = ({
   onFocus,
   onBlur,
   handleChange,
+  touched,
 }: InputsProps) => {
   return (
     <InputMask
@@ -32,8 +33,8 @@ export const InputWithMask = ({
           variant="outlined"
           size="small"
           inputProps={{ maxLength: maxLength || 10000 }}
-          error={Boolean(errors[name])}
-          helperText={errors[name]}
+          error={Boolean(errors[name]) && touched}
+          helperText={touched ? errors[name] : ''}
         />
       )}
     </InputMask>

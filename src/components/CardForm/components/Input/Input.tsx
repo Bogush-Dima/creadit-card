@@ -1,8 +1,8 @@
 import React from "react";
 import { TextField } from "@material-ui/core";
-import { InputsProps } from "../../types";
+import InputsProps from "./InputProps";
 
-export const Input = ({
+const Input = ({
   errors,
   value,
   className,
@@ -13,6 +13,7 @@ export const Input = ({
   onBlur,
   handleChange,
   formattingName,
+  touched,
 }: InputsProps) => {
   return (
     <TextField
@@ -25,10 +26,12 @@ export const Input = ({
       onChange={formattingName || handleChange}
       onFocus={onFocus}
       onBlur={onBlur}
-      error={Boolean(errors[name])}
-      helperText={errors[name]}
+      error={touched && Boolean(errors[name])}
+      helperText={touched ? errors[name] : ''}
       inputProps={{ maxLength: maxLength || 10000 }}
       value={value}
     />
   );
 };
+
+export default Input;
