@@ -16,7 +16,7 @@ export const App: React.FC = () => {
     name: "",
     date: "",
     cvv: "",
-  }
+  };
 
   const SignupSchema = yup.object({
     cardNumber: yup
@@ -56,9 +56,21 @@ export const App: React.FC = () => {
         justify="center"
         alignItems="center"
       >
-        <Grid container className={classes.container} justify="center" alignItems="center">
-          <CardView formik={formik} fieldInFocus={fieldInFocus} />
-          <CardForm formik={formik} setFieldInFocus={setFieldInFocus} />
+        <Grid
+          container
+          className={classes.background}
+          justify="center"
+          alignItems="center"
+        >
+          <Grid
+            container
+            className={classes.container}
+            justify="center"
+            alignItems="center"
+          >
+            <CardView formik={formik} fieldInFocus={fieldInFocus} />
+            <CardForm formik={formik} setFieldInFocus={setFieldInFocus} />
+          </Grid>
         </Grid>
       </Grid>
     </CssBaseline>

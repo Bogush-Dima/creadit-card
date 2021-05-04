@@ -100,7 +100,7 @@ export const CardForm: React.FC<Props> = ({
         alignItems="center"
       >
         <Button
-          className={classes.button}
+          className={classes.submit}
           type="submit"
           variant="contained"
           color="primary"
