@@ -10,7 +10,15 @@ export const CardForm: React.FC<Props> = ({
   setFieldInFocus,
 }: Props) => {
   const classes = useStyles();
-  const { handleChange, handleBlur, resetForm, errors, touched } = formik;
+  const {
+    handleChange,
+    handleBlur,
+    resetForm,
+    errors,
+    touched,
+    dirty,
+    isValid,
+  } = formik;
   const { cardNumber, name, date, cvv } = formik.values;
 
   const formattingName = (event: ChangeEvent<HTMLInputElement>) => {
@@ -24,7 +32,7 @@ export const CardForm: React.FC<Props> = ({
 
   const onBlur = (event: FocusEvent<HTMLInputElement>) => {
     setFieldInFocus("");
-    handleBlur(event)
+    handleBlur(event);
   };
 
   return (
@@ -96,7 +104,7 @@ export const CardForm: React.FC<Props> = ({
           type="submit"
           variant="contained"
           color="primary"
-
+          disabled={!isValid || !dirty}
         >
           Submit
         </Button>
