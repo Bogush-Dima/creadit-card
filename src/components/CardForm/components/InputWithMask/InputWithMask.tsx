@@ -1,5 +1,5 @@
 import React from "react";
-import { InputsProps } from "../../types";
+import { InputsProps } from "../../../../utils/types/InputsProps";
 import InputMask from "react-input-mask";
 import { TextField } from "@material-ui/core";
 

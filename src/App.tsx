@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { CssBaseline, Grid } from "@material-ui/core";
 import { useStyles } from "./styles";
-import { CardView } from "./components/CardView/component";
-import { CardForm } from "./components/CardForm/component";
+import CardView from "./components/CardView";
+import CardForm from "./components/CardForm";
 import { useFormik } from "formik";
 import * as yup from "yup";
 import { FormikValues } from "./types";
