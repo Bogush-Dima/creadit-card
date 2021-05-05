@@ -1,7 +1,7 @@
 import React, { ChangeEvent, FocusEvent } from "react";
 import { Grid, Button } from "@material-ui/core";
 import { useStyles } from "./styles";
-import { ComponentsProps } from "../../utils/types/ComponentsProps";
+import { ComponentsProps } from "utils/types/ComponentsProps";
 import Input from "./components/Input";
 import InputWithMask from "./components/InputWithMask";
 

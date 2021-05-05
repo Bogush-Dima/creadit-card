@@ -2,7 +2,7 @@ import React from "react";
 import clsx from "clsx";
 import { Grid } from "@material-ui/core";
 import { useStyles } from "./styles";
-import { ComponentsProps } from "../../utils/types/ComponentsProps";
+import { ComponentsProps } from "utils/types/ComponentsProps";
 
 export const CardView: React.FC<ComponentsProps> = ({ formik, fieldInFocus }: ComponentsProps) => {
   const classes = useStyles();

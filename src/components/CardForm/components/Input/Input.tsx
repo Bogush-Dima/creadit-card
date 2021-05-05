@@ -1,6 +1,6 @@
 import React from "react";
 import { TextField } from "@material-ui/core";
-import { InputsProps } from "../../../../utils/types/InputsProps";
+import { InputsProps } from "utils/types/InputsProps";
 
 export const Input = ({
   errors,
