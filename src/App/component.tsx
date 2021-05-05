@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { CssBaseline, Grid } from "@material-ui/core";
 import { useStyles } from "./styles";
-import { CardView } from "components/CardView/component";
-import { CardForm } from "components/CardForm/component";
+import { View } from "components/CreditCard/View/component";
+import { Form } from "components/CreditCard/Form/component";
 import { useFormik, FormikValues } from "formik";
 import * as yup from "yup";
 
@@ -67,8 +67,8 @@ export const App: React.FC = () => {
             justify="center"
             alignItems="center"
           >
-            <CardView formik={formik} fieldInFocus={fieldInFocus} />
-            <CardForm formik={formik} setFieldInFocus={setFieldInFocus} />
+            <View formik={formik} fieldInFocus={fieldInFocus} />
+            <Form formik={formik} setFieldInFocus={setFieldInFocus} />
           </Grid>
         </Grid>
       </Grid>

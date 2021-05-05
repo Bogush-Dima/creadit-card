@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdc3a49e-b91e-48bd-b4c8-04396bea7af3" name="Default Changelist" comment="change tsconfig.json for absolut imports">
-      <change afterPath="$PROJECT_DIR$/src/components/CardForm/components/Input/types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CardForm/components/InputWithMask/types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CardForm/types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CardView/types.ts" afterDir="false" />
+    <list default="true" id="cdc3a49e-b91e-48bd-b4c8-04396bea7af3" name="Default Changelist" comment="refactored types &amp; files structure">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CardForm/CardForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CardForm/component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CardForm/components/Input/Input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CardForm/components/Input/component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CardForm/components/Input/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CardForm/components/InputWithMask/InputWithMask.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CardForm/components/InputWithMask/component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CardForm/components/InputWithMask/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CardForm/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CardView/CardView.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CardView/component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CardView/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/types/ComponentsProps.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/types/InputsProps.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CardForm/component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CardForm/components/Input/component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CardForm/components/Input/types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CardForm/components/InputWithMask/component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CardForm/components/InputWithMask/types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CardForm/styles.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CardForm/types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CardView/component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CardView/styles.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CardView/types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/react-app-env.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/styles.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,9 +66,11 @@
       <recent name="C:\MY_FOLDER\---WORK-FOLDER---\creadit-card\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\MY_FOLDER\---WORK-FOLDER---\creadit-card\src\components\CreditCard" />
+      <recent name="C:\MY_FOLDER\---WORK-FOLDER---\creadit-card\src" />
+      <recent name="C:\MY_FOLDER\---WORK-FOLDER---\creadit-card\src\components\App" />
       <recent name="C:\MY_FOLDER\---WORK-FOLDER---\creadit-card\src\utils\types" />
       <recent name="C:\MY_FOLDER\---WORK-FOLDER---\creadit-card\src\components\CardForm\components\Input" />
-      <recent name="C:\MY_FOLDER\---WORK-FOLDER---\creadit-card\src\components\FormToFill" />
     </key>
   </component>
   <component name="RunManager">
@@ -110,7 +112,9 @@
       <workItem from="1620113810628" duration="6392000" />
       <workItem from="1620122824465" duration="10153000" />
       <workItem from="1620197436577" duration="6772000" />
-      <workItem from="1620210084024" duration="1099000" />
+      <workItem from="1620210084024" duration="1794000" />
+      <workItem from="1620211954027" duration="109000" />
+      <workItem from="1620212096863" duration="43000" />
     </task>
     <task id="LOCAL-00001" summary="start project">
       <created>1619423781907</created>
@@ -266,7 +270,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620198895578</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="refactored types &amp; files structure">
+      <created>1620211432676</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1620211432676</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,7 +330,8 @@
     <MESSAGE value="redesign app" />
     <MESSAGE value="weak refactor" />
     <MESSAGE value="change tsconfig.json for absolut imports" />
-    <option name="LAST_COMMIT_MESSAGE" value="change tsconfig.json for absolut imports" />
+    <MESSAGE value="refactored types &amp; files structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactored types &amp; files structure" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
