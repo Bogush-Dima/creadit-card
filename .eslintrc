@@ -27,7 +27,6 @@
     "import/export": "warn",
     "prettier/prettier": "error",
     "arrow-parens": ["error", "as-needed"],
-    "@typescript-eslint/camelcase": "warn",
     "semi":"error",
     "prefer-destructuring":"error",
     "max-len": [

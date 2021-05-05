@@ -1,29 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdc3a49e-b91e-48bd-b4c8-04396bea7af3" name="Default Changelist" comment="refactored files structure">
-      <change afterPath="$PROJECT_DIR$/.eslintignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eslintrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jsLinters/eslint.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/styles.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CreditCard/Form/component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreditCard/Form/component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CreditCard/Form/components/Input/component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreditCard/Form/components/Input/component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CreditCard/Form/components/Input/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreditCard/Form/components/Input/types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CreditCard/Form/components/InputWithMask/component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreditCard/Form/components/InputWithMask/component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CreditCard/Form/components/InputWithMask/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreditCard/Form/components/InputWithMask/types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CreditCard/Form/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreditCard/Form/styles.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CreditCard/Form/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreditCard/Form/types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CreditCard/View/component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreditCard/View/component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CreditCard/View/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreditCard/View/styles.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CreditCard/View/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreditCard/View/types.ts" afterDir="false" />
+    <list default="true" id="cdc3a49e-b91e-48bd-b4c8-04396bea7af3" name="Default Changelist" comment="add .eslintrc, .eslintignore, .prettierrc">
+      <change afterPath="$PROJECT_DIR$/src/components/CreditCard/component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreditCard/styles.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,9 +63,9 @@
       <recent name="C:\MY_FOLDER\---WORK-FOLDER---\creadit-card\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\MY_FOLDER\---WORK-FOLDER---\creadit-card" />
-      <recent name="C:\MY_FOLDER\---WORK-FOLDER---\creadit-card\src\components\CreditCard" />
       <recent name="C:\MY_FOLDER\---WORK-FOLDER---\creadit-card\src" />
+      <recent name="C:\MY_FOLDER\---WORK-FOLDER---\creadit-card\src\components\CreditCard" />
+      <recent name="C:\MY_FOLDER\---WORK-FOLDER---\creadit-card" />
       <recent name="C:\MY_FOLDER\---WORK-FOLDER---\creadit-card\src\components\App" />
       <recent name="C:\MY_FOLDER\---WORK-FOLDER---\creadit-card\src\utils\types" />
     </key>
@@ -139,7 +121,7 @@
       <workItem from="1620226746354" duration="1694000" />
       <workItem from="1620228500578" duration="453000" />
       <workItem from="1620229910569" duration="376000" />
-      <workItem from="1620230323234" duration="934000" />
+      <workItem from="1620230323234" duration="1637000" />
     </task>
     <task id="LOCAL-00001" summary="start project">
       <created>1619423781907</created>
@@ -316,7 +298,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620212448734</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="add .eslintrc, .eslintignore, .prettierrc">
+      <created>1620231507195</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1620231507195</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -372,7 +361,8 @@
     <MESSAGE value="change tsconfig.json for absolut imports" />
     <MESSAGE value="refactored types &amp; files structure" />
     <MESSAGE value="refactored files structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactored files structure" />
+    <MESSAGE value="add .eslintrc, .eslintignore, .prettierrc" />
+    <option name="LAST_COMMIT_MESSAGE" value="add .eslintrc, .eslintignore, .prettierrc" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

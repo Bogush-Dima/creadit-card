@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
-import { CssBaseline, Grid } from '@material-ui/core'
+import { Grid } from '@material-ui/core'
 import { useStyles } from './styles'
 import { View } from 'components/CreditCard/View/component'
 import { Form } from 'components/CreditCard/Form/component'
 import { useFormik, FormikValues } from 'formik'
 import * as yup from 'yup'
 
-export const App: React.FC = () => {
+export const CreditCard: React.FC = () => {
   const classes = useStyles()
   const [fieldInFocus, setFieldInFocus] = useState('')
 
@@ -48,15 +48,13 @@ export const App: React.FC = () => {
   })
 
   return (
-    <CssBaseline>
-      <Grid container className={classes.wrapper} justify="center" alignItems="center">
-        <Grid container className={classes.background} justify="center" alignItems="center">
-          <Grid container className={classes.container} justify="center" alignItems="center">
-            <View formik={formik} fieldInFocus={fieldInFocus} />
-            <Form formik={formik} setFieldInFocus={setFieldInFocus} />
-          </Grid>
+    <Grid container className={classes.wrapper} justify="center" alignItems="center">
+      <Grid container className={classes.background} justify="center" alignItems="center">
+        <Grid container className={classes.container} justify="center" alignItems="center">
+          <View formik={formik} fieldInFocus={fieldInFocus} />
+          <Form formik={formik} setFieldInFocus={setFieldInFocus} />
         </Grid>
       </Grid>
-    </CssBaseline>
+    </Grid>
   )
 }
