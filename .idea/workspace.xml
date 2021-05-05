@@ -1,24 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdc3a49e-b91e-48bd-b4c8-04396bea7af3" name="Default Changelist" comment="refactored types &amp; files structure">
+    <list default="true" id="cdc3a49e-b91e-48bd-b4c8-04396bea7af3" name="Default Changelist" comment="refactored files structure">
+      <change afterPath="$PROJECT_DIR$/.eslintignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eslintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLinters/eslint.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CardForm/component.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CardForm/components/Input/component.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CardForm/components/Input/types.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CardForm/components/InputWithMask/component.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CardForm/components/InputWithMask/types.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CardForm/styles.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CardForm/types.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CardView/component.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CardView/styles.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CardView/types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/styles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CreditCard/Form/component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreditCard/Form/component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CreditCard/Form/components/Input/component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreditCard/Form/components/Input/component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CreditCard/Form/components/Input/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreditCard/Form/components/Input/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CreditCard/Form/components/InputWithMask/component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreditCard/Form/components/InputWithMask/component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CreditCard/Form/components/InputWithMask/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreditCard/Form/components/InputWithMask/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CreditCard/Form/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreditCard/Form/styles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CreditCard/Form/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreditCard/Form/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CreditCard/View/component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreditCard/View/component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CreditCard/View/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreditCard/View/styles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CreditCard/View/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreditCard/View/types.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/react-app-env.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/styles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,18 +47,27 @@
     </file-type-list>
   </component>
   <component name="ProjectId" id="1rhL6faKNdr4aXofw18EsUyJT00" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../test" />
+    <property name="js.linters.configure.manually.selectedeslint" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.eslint" value="C:\MY_FOLDER\---WORK-FOLDER---\creadit-card\node_modules\eslint" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\MY_FOLDER\---WORK-FOLDER---\creadit-card\node_modules\prettier" />
@@ -63,14 +77,15 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\MY_FOLDER\---WORK-FOLDER---\creadit-card" />
       <recent name="C:\MY_FOLDER\---WORK-FOLDER---\creadit-card\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\MY_FOLDER\---WORK-FOLDER---\creadit-card" />
       <recent name="C:\MY_FOLDER\---WORK-FOLDER---\creadit-card\src\components\CreditCard" />
       <recent name="C:\MY_FOLDER\---WORK-FOLDER---\creadit-card\src" />
       <recent name="C:\MY_FOLDER\---WORK-FOLDER---\creadit-card\src\components\App" />
       <recent name="C:\MY_FOLDER\---WORK-FOLDER---\creadit-card\src\utils\types" />
-      <recent name="C:\MY_FOLDER\---WORK-FOLDER---\creadit-card\src\components\CardForm\components\Input" />
     </key>
   </component>
   <component name="RunManager">
@@ -86,6 +101,9 @@
     </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="cdc3a49e-b91e-48bd-b4c8-04396bea7af3" name="Default Changelist" comment="" />
@@ -115,6 +133,13 @@
       <workItem from="1620210084024" duration="1794000" />
       <workItem from="1620211954027" duration="109000" />
       <workItem from="1620212096863" duration="43000" />
+      <workItem from="1620212184167" duration="1055000" />
+      <workItem from="1620224047402" duration="484000" />
+      <workItem from="1620224543886" duration="1774000" />
+      <workItem from="1620226746354" duration="1694000" />
+      <workItem from="1620228500578" duration="453000" />
+      <workItem from="1620229910569" duration="376000" />
+      <workItem from="1620230323234" duration="934000" />
     </task>
     <task id="LOCAL-00001" summary="start project">
       <created>1619423781907</created>
@@ -277,7 +302,21 @@
       <option name="project" value="LOCAL" />
       <updated>1620211432676</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="refactored files structure">
+      <created>1620212433625</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1620212433625</updated>
+    </task>
+    <task id="LOCAL-00025" summary="refactored files structure">
+      <created>1620212448734</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1620212448734</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -308,6 +347,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="start project" />
     <MESSAGE value="restart project" />
     <MESSAGE value="create card structure" />
@@ -331,7 +371,8 @@
     <MESSAGE value="weak refactor" />
     <MESSAGE value="change tsconfig.json for absolut imports" />
     <MESSAGE value="refactored types &amp; files structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactored types &amp; files structure" />
+    <MESSAGE value="refactored files structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactored files structure" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

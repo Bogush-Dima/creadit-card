@@ -1,7 +1,7 @@
-import React from "react";
-import { Props } from "components/CreditCard/Form/components/InputWithMask/types";
-import InputMask from "react-input-mask";
-import { TextField } from "@material-ui/core";
+import React from 'react'
+import { Props } from 'components/CreditCard/Form/components/InputWithMask/types'
+import InputMask from 'react-input-mask'
+import { TextField } from '@material-ui/core'
 
 export const InputWithMask = ({
   errors,
@@ -15,16 +15,10 @@ export const InputWithMask = ({
   onBlur,
   handleChange,
   touched,
-}: Props) => {
+}: Props): React.ReactElement => {
   return (
-    <InputMask
-      mask={mask}
-      onChange={handleChange}
-      onFocus={onFocus}
-      onBlur={onBlur}
-      value={value}
-    >
-      {() => (
+    <InputMask mask={mask} onChange={handleChange} onFocus={onFocus} onBlur={onBlur} value={value}>
+      {(): React.ReactElement => (
         <TextField
           className={className}
           type="text"
@@ -38,5 +32,5 @@ export const InputWithMask = ({
         />
       )}
     </InputMask>
-  );
-};
+  )
+}

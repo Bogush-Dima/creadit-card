@@ -1,6 +1,6 @@
-import React from "react";
-import { TextField } from "@material-ui/core";
-import { Props } from "components/CreditCard/Form/components/Input/types";
+import React from 'react'
+import { TextField } from '@material-ui/core'
+import { Props } from 'components/CreditCard/Form/components/Input/types'
 
 export const Input = ({
   errors,
@@ -14,7 +14,7 @@ export const Input = ({
   handleChange,
   formattingName,
   touched,
-}: Props) => {
+}: Props): React.ReactElement => {
   return (
     <TextField
       className={className}
@@ -27,9 +27,9 @@ export const Input = ({
       onFocus={onFocus}
       onBlur={onBlur}
       error={touched && Boolean(errors[name])}
-      helperText={touched ? errors[name] : ""}
+      helperText={touched ? errors[name] : ''}
       inputProps={{ maxLength: maxLength || 10000 }}
       value={value}
     />
-  );
-};
+  )
+}
