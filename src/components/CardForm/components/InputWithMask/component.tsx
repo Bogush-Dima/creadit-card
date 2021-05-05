@@ -1,5 +1,5 @@
 import React from "react";
-import { InputsProps } from "utils/types/InputsProps";
+import { Props } from "components/CardForm/components/InputWithMask/types";
 import InputMask from "react-input-mask";
 import { TextField } from "@material-ui/core";
 
@@ -15,7 +15,7 @@ export const InputWithMask = ({
   onBlur,
   handleChange,
   touched,
-}: InputsProps) => {
+}: Props) => {
   return (
     <InputMask
       mask={mask}

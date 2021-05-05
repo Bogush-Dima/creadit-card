@@ -1,6 +1,6 @@
 import React from "react";
 import { TextField } from "@material-ui/core";
-import { InputsProps } from "utils/types/InputsProps";
+import { Props } from "components/CardForm/components/Input/types";
 
 export const Input = ({
   errors,
@@ -14,7 +14,7 @@ export const Input = ({
   handleChange,
   formattingName,
   touched,
-}: InputsProps) => {
+}: Props) => {
   return (
     <TextField
       className={className}

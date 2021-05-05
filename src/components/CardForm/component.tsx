@@ -1,14 +1,14 @@
 import React, { ChangeEvent, FocusEvent } from "react";
 import { Grid, Button } from "@material-ui/core";
 import { useStyles } from "./styles";
-import { ComponentsProps } from "utils/types/ComponentsProps";
-import Input from "./components/Input";
-import InputWithMask from "./components/InputWithMask";
+import { Props } from "components/CardForm/types";
+import { Input } from "components/CardForm/components/Input/component";
+import { InputWithMask } from "components/CardForm/components/InputWithMask/component";
 
-export const CardForm: React.FC<ComponentsProps> = ({
+export const CardForm: React.FC<Props> = ({
   formik,
   setFieldInFocus,
-}: ComponentsProps) => {
+}: Props) => {
   const classes = useStyles();
   const {
     handleChange,
