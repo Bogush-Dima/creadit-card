@@ -5,16 +5,17 @@ import { View } from 'components/CreditCard/View/component'
 import { Form } from 'components/CreditCard/Form/component'
 import { useFormik, FormikValues } from 'formik'
 import * as yup from 'yup'
+import { InitialFormikValues } from './types'
 
 export const CreditCard: React.FC = () => {
   const classes = useStyles()
   const [fieldInFocus, setFieldInFocus] = useState('')
 
-  const initialFormikValues: FormikValues = {
-    cardNumber: '',
-    name: '',
-    date: '',
-    cvv: '',
+  const initialValues: FormikValues = {
+    cardNumber: InitialFormikValues.cardNumber,
+    name: InitialFormikValues.name,
+    date: InitialFormikValues.date,
+    cvv: InitialFormikValues.cvv,
   }
 
   const SignupSchema = yup.object({
@@ -40,7 +41,7 @@ export const CreditCard: React.FC = () => {
   })
 
   const formik = useFormik({
-    initialValues: initialFormikValues,
+    initialValues: initialValues,
     validationSchema: SignupSchema,
     onSubmit: (values: FormikValues) => {
       alert(JSON.stringify(values, null, 2))
