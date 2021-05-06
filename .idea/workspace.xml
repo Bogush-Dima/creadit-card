@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdc3a49e-b91e-48bd-b4c8-04396bea7af3" name="Default Changelist" comment="create CreditCard component &amp; cleared App">
-      <change afterPath="$PROJECT_DIR$/src/components/CreditCard/types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_05_2021_18_10__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_05_2021_18_10__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_05_2021_18_10__Default_Changelist_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_05_2021_18_10__Default_Changelist_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_05_2021_18_11__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_05_2021_18_11__Default_Changelist_.xml" afterDir="false" />
+    <list default="true" id="cdc3a49e-b91e-48bd-b4c8-04396bea7af3" name="Default Changelist" comment="create enum InitialFormikValues">
+      <change afterPath="$PROJECT_DIR$/src/components/CreditCard/constants/CardSystems.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CreditCard/constants/FormikValuesKeys.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CreditCard/constants/InputLabels.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CreditCard/constants/InputMasks.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CreditCard/Form/component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreditCard/Form/component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CreditCard/View/component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreditCard/View/component.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CreditCard/component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreditCard/component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CreditCard/types.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +50,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.linters.configure.manually.selectedeslint" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../sd.portal.web" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -66,11 +69,11 @@
       <recent name="C:\MY_FOLDER\---WORK-FOLDER---\creadit-card\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\MY_FOLDER\---WORK-FOLDER---\creadit-card\src\components\CreditCard\constants" />
       <recent name="C:\MY_FOLDER\---WORK-FOLDER---\creadit-card\src" />
       <recent name="C:\MY_FOLDER\---WORK-FOLDER---\creadit-card\src\components\CreditCard" />
       <recent name="C:\MY_FOLDER\---WORK-FOLDER---\creadit-card" />
       <recent name="C:\MY_FOLDER\---WORK-FOLDER---\creadit-card\src\components\App" />
-      <recent name="C:\MY_FOLDER\---WORK-FOLDER---\creadit-card\src\utils\types" />
     </key>
   </component>
   <component name="RunManager">
@@ -129,7 +132,7 @@
       <workItem from="1620234132396" duration="81000" />
       <workItem from="1620240013398" duration="83000" />
       <workItem from="1620240157534" duration="903000" />
-      <workItem from="1620281790243" duration="1025000" />
+      <workItem from="1620281790243" duration="4463000" />
     </task>
     <task id="LOCAL-00001" summary="start project">
       <created>1619423781907</created>
@@ -313,7 +316,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620231507195</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="create enum InitialFormikValues">
+      <created>1620283666988</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1620283666988</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -330,7 +340,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="origin/master" />
                       </list>
                     </value>
                   </entry>
@@ -345,7 +355,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="start project" />
     <MESSAGE value="restart project" />
     <MESSAGE value="create card structure" />
     <MESSAGE value="create form to fill structure" />
@@ -370,7 +379,8 @@
     <MESSAGE value="refactored types &amp; files structure" />
     <MESSAGE value="refactored files structure" />
     <MESSAGE value="add .eslintrc, .eslintignore, .prettierrc" />
-    <option name="LAST_COMMIT_MESSAGE" value="add .eslintrc, .eslintignore, .prettierrc" />
+    <MESSAGE value="create enum InitialFormikValues" />
+    <option name="LAST_COMMIT_MESSAGE" value="create enum InitialFormikValues" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

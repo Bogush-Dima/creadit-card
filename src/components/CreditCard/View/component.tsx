@@ -2,6 +2,9 @@ import React from 'react'
 import clsx from 'clsx'
 import { Grid } from '@material-ui/core'
 import { useStyles } from './styles'
+import { FormikValuesKeys } from 'components/CreditCard/constants/FormikValuesKeys'
+import { InputLabels } from 'components/CreditCard/constants/InputLabels'
+import { Visa, MasterCard, Belcard } from 'components/CreditCard/constants/CardSystems'
 import { Props } from 'components/CreditCard/View/types'
 
 export const View: React.FC<Props> = ({ formik, fieldInFocus }: Props) => {
@@ -10,12 +13,12 @@ export const View: React.FC<Props> = ({ formik, fieldInFocus }: Props) => {
 
   const authCardSystem = (): string => {
     switch (cardNumber[0]) {
-      case '4':
-        return 'Visa'
-      case '5':
-        return 'MasterCard'
-      case '6':
-        return 'Белкарт'
+      case Visa.Code:
+        return Visa.Name
+      case MasterCard.Code:
+        return MasterCard.Name
+      case Belcard.Code:
+        return Belcard.Name
       default:
         return ''
     }
@@ -30,43 +33,43 @@ export const View: React.FC<Props> = ({ formik, fieldInFocus }: Props) => {
       <Grid container direction="column" alignItems="center" justify="center">
         <p
           className={clsx(classes.cardNumber, {
-            [classes.onFocus]: fieldInFocus === 'cardNumber',
+            [classes.onFocus]: fieldInFocus === FormikValuesKeys.CardNumber,
           })}
         >
-          {cardNumber || 'Card Number'}
+          {cardNumber || InputLabels.CardNumber}
         </p>
 
         <Grid container justify="space-between" alignItems="baseline">
           <p
             className={clsx(classes.userName, {
-              [classes.onFocus]: fieldInFocus === 'name',
+              [classes.onFocus]: fieldInFocus === FormikValuesKeys.Name,
             })}
           >
-            {name || 'Name'}
+            {name || InputLabels.Name}
           </p>
           <p
             className={clsx(classes.viewDate, {
-              [classes.onFocus]: fieldInFocus === 'date',
+              [classes.onFocus]: fieldInFocus === FormikValuesKeys.Date,
             })}
           >
-            {date || 'Date'}
+            {date || InputLabels.Date}
           </p>
         </Grid>
 
         <Grid
           container
           className={clsx(classes.backSide, {
-            [classes.onFocusBackSide]: fieldInFocus === 'cvv',
+            [classes.onFocusBackSide]: fieldInFocus === FormikValuesKeys.Cvv,
           })}
           justify="flex-end"
           alignItems="flex-end"
         >
           <p
             className={clsx(classes.viewDate, {
-              [classes.onFocus]: fieldInFocus === 'cvv',
+              [classes.onFocus]: fieldInFocus === FormikValuesKeys.Cvv,
             })}
           >
-            {cvv || 'CVV'}
+            {cvv || InputLabels.Cvv}
           </p>
         </Grid>
       </Grid>

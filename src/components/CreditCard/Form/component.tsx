@@ -1,6 +1,9 @@
 import React, { ChangeEvent, FocusEvent } from 'react'
 import { Grid, Button } from '@material-ui/core'
 import { useStyles } from './styles'
+import { FormikValuesKeys } from 'components/CreditCard/constants/FormikValuesKeys'
+import { InputLabels } from 'components/CreditCard/constants/InputLabels'
+import { InputMasks } from 'components/CreditCard/constants/InputMasks'
 import { Props } from 'components/CreditCard/Form/types'
 import { Input } from 'components/CreditCard/Form/components/Input/component'
 import { InputWithMask } from 'components/CreditCard/Form/components/InputWithMask/component'
@@ -28,11 +31,11 @@ export const Form: React.FC<Props> = ({ formik, setFieldInFocus }: Props) => {
     <form onSubmit={formik.handleSubmit}>
       {InputWithMask({
         errors: errors,
-        mask: '9999 9999 9999 9999',
+        mask: InputMasks.CardNumber,
         value: cardNumber,
         className: classes.longField,
-        name: 'cardNumber',
-        label: 'card number',
+        name: FormikValuesKeys.CardNumber,
+        label: InputLabels.CardNumber,
         maxLength: 20,
         onFocus: onFocus,
         onBlur: onBlur,
@@ -44,8 +47,8 @@ export const Form: React.FC<Props> = ({ formik, setFieldInFocus }: Props) => {
         errors: errors,
         value: name,
         className: classes.longField,
-        name: 'name',
-        label: 'name',
+        name: FormikValuesKeys.Name,
+        label: InputLabels.Name,
         onFocus: onFocus,
         onBlur: onBlur,
         handleChange: handleChange,
@@ -56,11 +59,11 @@ export const Form: React.FC<Props> = ({ formik, setFieldInFocus }: Props) => {
       <Grid container justify="space-between">
         {InputWithMask({
           errors: errors,
-          mask: '99/99',
+          mask: InputMasks.Date,
           value: date,
           className: classes.shortField,
-          name: 'date',
-          label: 'mm/yy',
+          name: FormikValuesKeys.Date,
+          label: InputLabels.Date,
           maxLength: 6,
           onFocus: onFocus,
           onBlur: onBlur,
@@ -72,8 +75,8 @@ export const Form: React.FC<Props> = ({ formik, setFieldInFocus }: Props) => {
           errors: errors,
           value: cvv,
           className: classes.shortField,
-          name: 'cvv',
-          label: 'cvv',
+          name: FormikValuesKeys.Cvv,
+          label: InputLabels.Cvv,
           maxLength: 3,
           onFocus: onFocus,
           onBlur: onBlur,
