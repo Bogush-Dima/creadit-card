@@ -37,7 +37,7 @@ export const CreditCard: React.FC = () => {
       .required('Date is required'),
     cvv: yup
       .string()
-      .length(3, 'CVV must have 3 characters')
+      .matches(/\d{3}/, 'CVV must have 3 characters')
       .required('CVV is required'),
   })
 

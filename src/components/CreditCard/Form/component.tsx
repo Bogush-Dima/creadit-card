@@ -101,13 +101,14 @@ export const Form: React.FC<Props> = ({ formik, setFieldInFocus }: Props) => {
         </Grid>
 
         <Grid item md={5}>
-          <Input
+          <InputWithMask
             errors={errors}
+            mask="999"
             value={cvv}
             className={classes.shortField}
             name={FormikValuesKeys.Cvv}
             label={InputLabels.Cvv}
-            maxLength={3}
+            maxLength={4}
             onFocus={onFocus}
             onBlur={onBlur}
             handleChange={handleChange}
