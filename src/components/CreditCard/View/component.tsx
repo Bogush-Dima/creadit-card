@@ -17,6 +17,13 @@ export const View: React.FC<Props> = ({ formik, fieldInFocus }: Props) => {
     return `${month < 10 ? '0' + month : month}/${year}`
   }
 
+  const checkNameLength = (value: string): string => {
+    if (value.length > 15) {
+      return value.slice(0, 15) + '...'
+    }
+    return value
+  }
+
   const authCardSystem = useMemo(() => {
     switch (cardNumber[0]) {
       case Visa.Code:
@@ -51,7 +58,7 @@ export const View: React.FC<Props> = ({ formik, fieldInFocus }: Props) => {
               [classes.onFocus]: fieldInFocus === FormikValuesKeys.Name,
             })}
           >
-            {name || InputLabels.Name}
+            {checkNameLength(name) || InputLabels.Name}
           </p>
           <p
             className={clsx(classes.viewDate, {

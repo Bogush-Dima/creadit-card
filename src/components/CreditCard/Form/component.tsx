@@ -52,7 +52,7 @@ export const Form: React.FC<Props> = ({ formik, setFieldInFocus }: Props) => {
     const minYear = new Date().getFullYear()
     return new Date(minYear, minMonth, 1)
   }
-
+  //TODO think about it
   const changeName = (event: ChangeEvent<HTMLInputElement>): void => {
     const { value } = event.target
     if (!value.match(/[0-9]/)) {

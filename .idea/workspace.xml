@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdc3a49e-b91e-48bd-b4c8-04396bea7af3" name="Default Changelist" comment="fix validation cvv">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="cdc3a49e-b91e-48bd-b4c8-04396bea7af3" name="Default Changelist" comment="fix entering name">
       <change beforePath="$PROJECT_DIR$/src/components/CreditCard/Form/component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreditCard/Form/component.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CreditCard/View/component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreditCard/View/component.tsx" afterDir="false" />
     </list>
@@ -128,7 +127,7 @@
       <workItem from="1620240157534" duration="903000" />
       <workItem from="1620281790243" duration="17639000" />
       <workItem from="1620367320081" duration="3035000" />
-      <workItem from="1620372088550" duration="13257000" />
+      <workItem from="1620372088550" duration="13592000" />
     </task>
     <task id="LOCAL-00001" summary="start project">
       <created>1619423781907</created>
@@ -340,7 +339,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620390200469</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="fix entering name">
+      <created>1620390862111</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1620390862111</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -372,7 +378,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add buttons for form to fill structure" />
     <MESSAGE value="add formik to project &amp; restyling form inputs" />
     <MESSAGE value="restyling CardView" />
     <MESSAGE value="made view data in CardView in real time" />
@@ -397,7 +402,8 @@
     <MESSAGE value="create enums constants" />
     <MESSAGE value="add DatePicker to project" />
     <MESSAGE value="fix validation cvv" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix validation cvv" />
+    <MESSAGE value="fix entering name" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix entering name" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
