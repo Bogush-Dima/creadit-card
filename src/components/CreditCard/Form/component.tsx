@@ -1,4 +1,4 @@
-import React, { FocusEvent } from 'react'
+import React, { ChangeEvent, FocusEvent } from 'react'
 import { Grid, Button } from '@material-ui/core'
 import { DatePicker, MuiPickersUtilsProvider } from '@material-ui/pickers'
 import DateFns from '@date-io/date-fns'
@@ -53,6 +53,13 @@ export const Form: React.FC<Props> = ({ formik, setFieldInFocus }: Props) => {
     return new Date(minYear, minMonth, 1)
   }
 
+  const changeName = (event: ChangeEvent<HTMLInputElement>): void => {
+    const { value } = event.target
+    if (!value.match(/[0-9]/)) {
+      setFieldValue(FormikValuesKeys.Name, event.target.value.toUpperCase())
+    }
+  }
+
   return (
     <form onSubmit={formik.handleSubmit}>
       <InputWithMask
@@ -71,13 +78,13 @@ export const Form: React.FC<Props> = ({ formik, setFieldInFocus }: Props) => {
 
       <Input
         errors={errors}
-        value={name.toUpperCase()}
+        value={name}
         className={classes.longField}
         name={FormikValuesKeys.Name}
         label={InputLabels.Name}
         onFocus={onFocus}
         onBlur={onBlur}
-        handleChange={handleChange}
+        handleChange={changeName}
         touched={touched.name}
       />
 

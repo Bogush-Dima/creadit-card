@@ -51,7 +51,7 @@ export const View: React.FC<Props> = ({ formik, fieldInFocus }: Props) => {
               [classes.onFocus]: fieldInFocus === FormikValuesKeys.Name,
             })}
           >
-            {name.toUpperCase() || InputLabels.Name}
+            {name || InputLabels.Name}
           </p>
           <p
             className={clsx(classes.viewDate, {

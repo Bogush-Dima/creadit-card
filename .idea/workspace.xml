@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdc3a49e-b91e-48bd-b4c8-04396bea7af3" name="Default Changelist" comment="add DatePicker to project">
+    <list default="true" id="cdc3a49e-b91e-48bd-b4c8-04396bea7af3" name="Default Changelist" comment="fix validation cvv">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CreditCard/Form/component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreditCard/Form/component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CreditCard/component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreditCard/component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CreditCard/View/component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreditCard/View/component.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +128,7 @@
       <workItem from="1620240157534" duration="903000" />
       <workItem from="1620281790243" duration="17639000" />
       <workItem from="1620367320081" duration="3035000" />
-      <workItem from="1620372088550" duration="12525000" />
+      <workItem from="1620372088550" duration="13257000" />
     </task>
     <task id="LOCAL-00001" summary="start project">
       <created>1619423781907</created>
@@ -333,7 +333,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620387399007</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="fix validation cvv">
+      <created>1620390200469</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1620390200469</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -365,7 +372,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="create form to fill structure" />
     <MESSAGE value="add buttons for form to fill structure" />
     <MESSAGE value="add formik to project &amp; restyling form inputs" />
     <MESSAGE value="restyling CardView" />
@@ -390,7 +396,8 @@
     <MESSAGE value="create enum InitialFormikValues" />
     <MESSAGE value="create enums constants" />
     <MESSAGE value="add DatePicker to project" />
-    <option name="LAST_COMMIT_MESSAGE" value="add DatePicker to project" />
+    <MESSAGE value="fix validation cvv" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix validation cvv" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
