@@ -29,6 +29,8 @@
     "arrow-parens": ["error", "as-needed"],
     "semi":"error",
     "prefer-destructuring":"error",
+    "react/jsx-no-comment-textnodes": 0,
+    "spaced-comment": 0,
     "max-len": [
       "warn",
       {

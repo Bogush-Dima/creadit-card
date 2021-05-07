@@ -12,7 +12,6 @@ export const Input = ({
   onFocus,
   onBlur,
   handleChange,
-  formattingName,
   touched,
 }: Props): React.ReactElement => {
   return (
@@ -23,7 +22,7 @@ export const Input = ({
       label={label}
       variant="outlined"
       size="small"
-      onChange={formattingName || handleChange}
+      onChange={handleChange}
       onFocus={onFocus}
       onBlur={onBlur}
       error={touched && Boolean(errors[name])}

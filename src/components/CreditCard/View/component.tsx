@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useMemo } from 'react'
 import clsx from 'clsx'
 import { Grid } from '@material-ui/core'
 import { useStyles } from './styles'
@@ -10,8 +10,14 @@ import { Props } from 'components/CreditCard/View/types'
 export const View: React.FC<Props> = ({ formik, fieldInFocus }: Props) => {
   const classes = useStyles()
   const { cardNumber, name, date, cvv } = formik.values
+  //TODO think about it
+  const initialDateValue = (): string => {
+    const year = new Date().getFullYear() - 2000
+    const month = new Date().getMonth() + 1
+    return `${month < 10 ? '0' + month : month}/${year}`
+  }
 
-  const authCardSystem = (): string => {
+  const authCardSystem = useMemo(() => {
     switch (cardNumber[0]) {
       case Visa.Code:
         return Visa.Name
@@ -22,12 +28,12 @@ export const View: React.FC<Props> = ({ formik, fieldInFocus }: Props) => {
       default:
         return ''
     }
-  }
+  }, [cardNumber[0]])
 
   return (
     <Grid container className={classes.card}>
       <Grid container md={12} className={classes.logo} alignItems="center" justify="flex-end">
-        <p className={classes.cardSystem}>{authCardSystem()}</p>
+        <p className={classes.cardSystem}>{authCardSystem}</p>
       </Grid>
 
       <Grid container direction="column" alignItems="center" justify="center">
@@ -45,14 +51,14 @@ export const View: React.FC<Props> = ({ formik, fieldInFocus }: Props) => {
               [classes.onFocus]: fieldInFocus === FormikValuesKeys.Name,
             })}
           >
-            {name || InputLabels.Name}
+            {name.toUpperCase() || InputLabels.Name}
           </p>
           <p
             className={clsx(classes.viewDate, {
               [classes.onFocus]: fieldInFocus === FormikValuesKeys.Date,
             })}
           >
-            {date || InputLabels.Date}
+            {date || initialDateValue()}
           </p>
         </Grid>
 

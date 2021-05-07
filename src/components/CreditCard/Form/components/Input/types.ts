@@ -1,4 +1,4 @@
-import React, { ChangeEvent, FocusEvent } from 'react'
+import React, { FocusEvent } from 'react'
 import { FormikErrors, FormikValues } from 'formik'
 
 export interface Props {
@@ -11,6 +11,5 @@ export interface Props {
   onFocus: (event: FocusEvent<HTMLInputElement>) => void
   onBlur: (event: FocusEvent<HTMLInputElement>) => void
   handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void
-  formattingName?: (event: ChangeEvent<HTMLInputElement>) => void
   touched: boolean | undefined
 }
