@@ -60,6 +60,9 @@ export const Form: React.FC<Props> = ({ formik, setFieldInFocus }: Props) => {
     }
   }
 
+  console.log('IS VALID: ', isValid)
+  console.log('DIRTY: ', dirty)
+
   return (
     <form onSubmit={formik.handleSubmit}>
       <InputWithMask

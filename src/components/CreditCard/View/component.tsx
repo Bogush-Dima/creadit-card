@@ -10,16 +10,10 @@ import { Props } from 'components/CreditCard/View/types'
 export const View: React.FC<Props> = ({ formik, fieldInFocus }: Props) => {
   const classes = useStyles()
   const { cardNumber, name, date, cvv } = formik.values
-  //TODO think about it
-  const initialDateValue = (): string => {
-    const year = new Date().getFullYear() - 2000
-    const month = new Date().getMonth() + 1
-    return `${month < 10 ? '0' + month : month}/${year}`
-  }
 
   const checkNameLength = (value: string): string => {
-    if (value.length > 15) {
-      return value.slice(0, 15) + '...'
+    if (value.length > 10) {
+      return value.slice(0, 10) + '...'
     }
     return value
   }
@@ -65,7 +59,7 @@ export const View: React.FC<Props> = ({ formik, fieldInFocus }: Props) => {
               [classes.onFocus]: fieldInFocus === FormikValuesKeys.Date,
             })}
           >
-            {date || initialDateValue()}
+            {date}
           </p>
         </Grid>
 

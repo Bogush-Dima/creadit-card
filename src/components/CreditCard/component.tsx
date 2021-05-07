@@ -11,10 +11,16 @@ export const CreditCard: React.FC = () => {
   const classes = useStyles()
   const [fieldInFocus, setFieldInFocus] = useState('')
 
+  const initialDateValue = (): string => {
+    const year = new Date().getFullYear() - 2000
+    const month = new Date().getMonth() + 1
+    return `${month < 10 ? '0' + month : month}/${year}`
+  }
+
   const initialValues: FormikValues = {
     [FormikValuesKeys.CardNumber]: '',
     [FormikValuesKeys.Name]: '',
-    [FormikValuesKeys.Date]: '',
+    [FormikValuesKeys.Date]: initialDateValue(),
     [FormikValuesKeys.Cvv]: '',
   }
 
@@ -30,11 +36,6 @@ export const CreditCard: React.FC = () => {
       .matches(/\D/, "Name shouldn't have numbers")
       .matches(/\D\s\D/, 'Name should have indent')
       .required('Name is required'),
-    date: yup
-      .string()
-      .matches(/\[0-1][0-9]\/\d{2}/, "It's not real")
-      .matches(/\d{2}\/\d{2}/, "Date isn't completed")
-      .required('Date is required'),
     cvv: yup
       .string()
       .matches(/\d{3}/, 'CVV must have 3 characters')
