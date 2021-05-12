@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdc3a49e-b91e-48bd-b4c8-04396bea7af3" name="Default Changelist" comment="add format script">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="cdc3a49e-b91e-48bd-b4c8-04396bea7af3" name="Default Changelist" comment="add mask for Cvv" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,7 +50,7 @@
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\MY_FOLDER\---WORK-FOLDER---\creadit-card\node_modules\prettier" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
-    <property name="ts.external.directory.path" value="C:\MY_FOLDER\WebStorm 2021.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="ts.external.directory.path" value="C:\MY_FOLDER\---WORK-FOLDER---\creadit-card\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -127,7 +125,7 @@
       <workItem from="1620281790243" duration="17639000" />
       <workItem from="1620367320081" duration="3035000" />
       <workItem from="1620372088550" duration="17062000" />
-      <workItem from="1620799444545" duration="7830000" />
+      <workItem from="1620799444545" duration="8424000" />
     </task>
     <task id="LOCAL-00001" summary="start project">
       <created>1619423781907</created>
@@ -381,7 +379,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620806979429</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="add mask for Cvv">
+      <created>1620808337534</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1620808337534</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -413,7 +418,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="redesign FormToFill &amp; fix bug with reset form" />
     <MESSAGE value="create fieldsLimiter &amp; validation fields" />
     <MESSAGE value="add react-input-mask to project" />
     <MESSAGE value="change validation app" />
@@ -438,7 +442,8 @@
     <MESSAGE value="create adaptive layout" />
     <MESSAGE value="create DatePicker in DateInput component" />
     <MESSAGE value="add format script" />
-    <option name="LAST_COMMIT_MESSAGE" value="add format script" />
+    <MESSAGE value="add mask for Cvv" />
+    <option name="LAST_COMMIT_MESSAGE" value="add mask for Cvv" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
