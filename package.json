@@ -32,7 +32,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
-    "lint": "eslint src -c .eslintrc --ext ts,tsx --fix"
+    "lint": "eslint src -c .eslintrc --ext ts,tsx --fix",
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\""
   },
   "eslintConfig": {
     "extends": [
