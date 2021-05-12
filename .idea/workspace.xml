@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdc3a49e-b91e-48bd-b4c8-04396bea7af3" name="Default Changelist" comment="fix wrapping name with enter it">
+    <list default="true" id="cdc3a49e-b91e-48bd-b4c8-04396bea7af3" name="Default Changelist" comment="restyled CardView">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_05_2021_18_10_[Default_Changelist]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_05_2021_18_10__Default_Changelist_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_05_2021_18_11_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_05_2021_18_11__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CreditCard/Form/component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreditCard/Form/component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CreditCard/View/component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreditCard/View/component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CreditCard/Form/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreditCard/Form/styles.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CreditCard/View/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreditCard/View/styles.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CreditCard/component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreditCard/component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CreditCard/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreditCard/styles.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +134,8 @@
       <workItem from="1620240157534" duration="903000" />
       <workItem from="1620281790243" duration="17639000" />
       <workItem from="1620367320081" duration="3035000" />
-      <workItem from="1620372088550" duration="16760000" />
+      <workItem from="1620372088550" duration="17062000" />
+      <workItem from="1620799444545" duration="4841000" />
     </task>
     <task id="LOCAL-00001" summary="start project">
       <created>1619423781907</created>
@@ -356,7 +361,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620391482721</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="restyled CardView">
+      <created>1620399000202</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1620399000202</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -388,7 +400,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="restyling CardView" />
     <MESSAGE value="made view data in CardView in real time" />
     <MESSAGE value="change styles for CardView" />
     <MESSAGE value="add reset form (bad realization)" />
@@ -413,7 +424,8 @@
     <MESSAGE value="fix validation cvv" />
     <MESSAGE value="fix entering name" />
     <MESSAGE value="fix wrapping name with enter it" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix wrapping name with enter it" />
+    <MESSAGE value="restyled CardView" />
+    <option name="LAST_COMMIT_MESSAGE" value="restyled CardView" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

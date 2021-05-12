@@ -1,4 +1,7 @@
 import { makeStyles } from '@material-ui/core'
+import { createMuiTheme } from '@material-ui/core/styles'
+
+const theme = createMuiTheme()
 
 export const useStyles = makeStyles({
   form: {
@@ -12,8 +15,16 @@ export const useStyles = makeStyles({
     width: '100%',
     marginBottom: '15px',
   },
+  gridItem: {
+    [theme.breakpoints.down('md')]: {
+      width: '100%',
+    },
+  },
   shortField: {
-    width: '100%',
+    marginBottom: '15px',
+    [theme.breakpoints.down('md')]: {
+      width: '100%',
+    },
   },
   buttonWrapper: {
     marginTop: '25px',
@@ -29,21 +40,5 @@ export const useStyles = makeStyles({
     borderRadius: '50px',
     background: '#3f51b5',
     width: '110px',
-  },
-  datePicker: {
-    height: '40px',
-    width: '195px',
-    padding: '18.5px 14px',
-    background: 'transparent',
-    border: '1px solid #b4b4c4',
-    borderRadius: '4px',
-    color: 'rgba(0, 0, 0, 0.87)',
-    display: 'inline-flex',
-    fontSize: '1rem',
-    alignItems: 'center',
-    fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
-    fontWeight: 400,
-    lineHeight: '1.1876em',
-    letterSpacing: '0.00938em',
   },
 })

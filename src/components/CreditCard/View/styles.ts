@@ -1,4 +1,7 @@
 import { makeStyles } from '@material-ui/core'
+import { createMuiTheme } from '@material-ui/core/styles'
+
+const theme = createMuiTheme()
 
 export const useStyles = makeStyles({
   card: {
@@ -11,15 +14,28 @@ export const useStyles = makeStyles({
     height: '240px',
     overflow: 'hidden',
     marginBottom: '30px',
+
+    [theme.breakpoints.down('sm')]: {
+      height: '200px',
+    },
   },
   logo: {
     position: 'absolute',
     top: 0,
     right: '15px',
     fontSize: '20px',
+
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '15px',
+    },
   },
   cardSystem: {
     color: 'white',
+  },
+  dataWrapper: {
+    [theme.breakpoints.down('sm')]: {
+      display: 'block',
+    },
   },
   cardNumber: {
     fontSize: '20px',
@@ -29,6 +45,10 @@ export const useStyles = makeStyles({
     width: '100%',
     textAlign: 'center',
     color: 'white',
+
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '15px',
+    },
   },
   userName: {
     overflowX: 'auto',
@@ -39,6 +59,11 @@ export const useStyles = makeStyles({
     width: '230px',
     textAlign: 'center',
     color: 'white',
+
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '15px',
+      width: '170px',
+    },
   },
   viewDate: {
     border: '2px solid #cecece',
@@ -48,6 +73,11 @@ export const useStyles = makeStyles({
     width: '120px',
     textAlign: 'center',
     color: 'white',
+
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '15px',
+      width: '70px',
+    },
   },
   backSide: {
     display: 'none',

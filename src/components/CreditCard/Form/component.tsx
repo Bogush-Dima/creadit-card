@@ -92,9 +92,10 @@ export const Form: React.FC<Props> = ({ formik, setFieldInFocus }: Props) => {
       />
 
       <Grid container justify="space-between">
-        <Grid item md={5}>
+        <Grid className={classes.gridItem} item md={5}>
           <MuiPickersUtilsProvider utils={DateFns}>
             <DatePicker
+              className={classes.shortField}
               label={InputLabels.Date}
               value={dateParse(date)}
               name={FormikValuesKeys.Date}
@@ -110,12 +111,12 @@ export const Form: React.FC<Props> = ({ formik, setFieldInFocus }: Props) => {
           </MuiPickersUtilsProvider>
         </Grid>
 
-        <Grid item md={5}>
+        <Grid item className={classes.gridItem} md={5}>
           <InputWithMask
+            className={classes.shortField}
             errors={errors}
             mask="999"
             value={cvv}
-            className={classes.shortField}
             name={FormikValuesKeys.Cvv}
             label={InputLabels.Cvv}
             maxLength={4}
