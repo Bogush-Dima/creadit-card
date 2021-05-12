@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdc3a49e-b91e-48bd-b4c8-04396bea7af3" name="Default Changelist" comment="restyled CardView">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_05_2021_18_10_[Default_Changelist]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_05_2021_18_10__Default_Changelist_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_05_2021_18_11_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_05_2021_18_11__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="cdc3a49e-b91e-48bd-b4c8-04396bea7af3" name="Default Changelist" comment="create adaptive layout">
+      <change afterPath="$PROJECT_DIR$/src/components/CreditCard/Form/components/DateInput/component.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CreditCard/Form/components/DateInput/types.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CreditCard/Form/component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreditCard/Form/component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CreditCard/Form/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreditCard/Form/styles.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CreditCard/View/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreditCard/View/styles.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CreditCard/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreditCard/styles.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +129,7 @@
       <workItem from="1620281790243" duration="17639000" />
       <workItem from="1620367320081" duration="3035000" />
       <workItem from="1620372088550" duration="17062000" />
-      <workItem from="1620799444545" duration="4841000" />
+      <workItem from="1620799444545" duration="6003000" />
     </task>
     <task id="LOCAL-00001" summary="start project">
       <created>1619423781907</created>
@@ -368,7 +362,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620399000202</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="create adaptive layout">
+      <created>1620804869339</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1620804869339</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -400,7 +401,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="made view data in CardView in real time" />
     <MESSAGE value="change styles for CardView" />
     <MESSAGE value="add reset form (bad realization)" />
     <MESSAGE value="redesign FormToFill &amp; fix bug with reset form" />
@@ -425,7 +425,8 @@
     <MESSAGE value="fix entering name" />
     <MESSAGE value="fix wrapping name with enter it" />
     <MESSAGE value="restyled CardView" />
-    <option name="LAST_COMMIT_MESSAGE" value="restyled CardView" />
+    <MESSAGE value="create adaptive layout" />
+    <option name="LAST_COMMIT_MESSAGE" value="create adaptive layout" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
