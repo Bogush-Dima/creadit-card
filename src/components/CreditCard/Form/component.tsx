@@ -82,7 +82,7 @@ export const Form: React.FC<Props> = ({ formik, setFieldInFocus }: Props) => {
           <InputWithMask
             className={classes.shortField}
             errors={errors}
-            mask="999"
+            mask={InputMasks.Cvv}
             value={cvv}
             name={FormikValuesKeys.Cvv}
             label={InputLabels.Cvv}
